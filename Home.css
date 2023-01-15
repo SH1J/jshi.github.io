@@ -1,0 +1,219 @@
+
+
+html {
+  color: red;
+  background-color: black;
+  overflow: hidden;
+}
+
+html, header, body, footer, div{
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100vw;
+  justify-content: center;
+  background-color: black;
+}
+
+div.PC {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+div.F {
+  animation: BGchange 10s linear 0s infinite;
+}
+
+div.B {
+  animation: BGchange 10s linear 0s infinite reverse;
+}
+
+.aButton {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  text-decoration: none;
+  font-size: 1vw;
+  cursor: none;
+  /*animation: BGchange 5s linear 0s infinite;*/
+  background-color: gray;
+}
+
+.aButton:hover {
+  animation: BGchange 2.5s linear 0s infinite reverse !important;
+}
+
+iframe {
+  width: 90%;
+  height: 750px;
+}
+
+.wideI {
+  width: 100%;
+  height: 900px;
+}
+
+.HI {
+  width: 49.5%;
+  height: 900px;
+}
+
+@keyframes BGchange{
+    0% {
+      background: #ff0000;
+      color: #ff0000;
+      border-color: #ff0000;
+    }
+    16.667% {
+      background: #ffff00;
+      color : #ff00ff;
+      border-color: #ff00ff;
+    }
+    33.334% {
+      background: #00ff00;
+      color : #0000ff;
+      border-color: #0000ff;
+    }
+    50% {
+      background: #00ffff;
+      color : #00ffff;
+      border-color: #00ffff;
+    }
+    66.668% {
+      background: #0000ff;
+      color : #00ff00;
+      border-color: #00ff00;
+    }
+    83.335% {
+      background: #ff00ff;
+      color : #ffff00;
+      border-color: #ffff00;
+    }
+    100% {
+      background: #ff0000;
+      color : #ff0000;
+      border-color: #ff0000;
+    }
+}
+
+/* new part */
+header {
+  width: 98%;
+  height: 5%;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  animation: BGchange 15s linear 0s infinite;
+}
+
+footer {
+  width: 98%;
+  height: 5%;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  animation: BGchange 15s linear 0s infinite;
+}
+
+div.pBody {
+  width: 98%;
+  height: 100%;
+  overflow: auto;
+  top: 5%;
+  position: absolute;
+}
+
+div.SB {
+  width: 20%;
+  height: 90%;
+  overflow: auto;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  /*animation: BGchange 10s linear 0s infinite;*/
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.MB {
+  width: 80%;
+  height: 90%;
+  overflow: auto;
+  top: 0px;
+  left: 20%;
+  position: absolute;
+  /*animation: BGchange 10s linear 0s infinite reverse;*/
+  background-color: black;
+}
+
+div.PM {
+  width: 2%;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+div.PM > div.Tab {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*animation: BGchange 5s linear 0s infinite;*/
+  background-color: black;
+} 
+
+div.PM > div.Tab:hover {
+  animation: BGchange 2.5s linear 0s infinite reverse !important;
+}
+
+div.PML {
+  display: none;
+  /*animation: BGchange 10s linear 0s infinite reverse;*/
+  background-color: black;
+  height: 100%;
+  width: 50vw;
+  top: 0px;
+  right: 100%;
+}
+
+div.Tab:hover div.PML {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.schedule:hover::after{
+  content: url(J1S1.png);
+}
+
+
+.stonk_body {
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.stonk {
+  height: 33vh;
+  width: 33vw;
+  float: left;
+}
